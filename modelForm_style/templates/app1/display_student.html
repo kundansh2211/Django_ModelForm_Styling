@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+</head>
+<body>
+    <div style="color:#5d84d9; font-weight: 400;">
+        {% for student in data %}
+            Name: {{ student.name }}<br>
+            Roll: {{ student.roll }}<br>
+            Address: {{ student.address }}<br>
+            Email: {{ student.email }}<br>
+            Date of Birth:{{ student.dob }}<br>
+            Gender: {{ student.gender }}<br><hr>
+        {% endfor %}
+    </div>
+</body>
+</html>
